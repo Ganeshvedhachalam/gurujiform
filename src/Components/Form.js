@@ -227,17 +227,7 @@ function Form() {
             {step < 3 && <button onClick={handleNext}>Next</button>}
             {step === 3 && <button type="submit">Submit</button>}
           </div>
-         {/* < div className="buttons">
-          <button type="button" onClick={handlePrev} disabled={step === 1}>
-            Back
-          </button>
-          {step < 3 && (
-            <button type="button" onClick={handleNext}>
-              Next
-            </button>
-          )}
-          {step === 3 && <button type="submit">Submit</button>}
-        </div> */}
+        
         </form>
       </div>
     </>

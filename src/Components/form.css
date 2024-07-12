@@ -10,12 +10,14 @@
     gap: 1px;
     padding: 20px; /* Add padding to ensure the content is not touching the edges */
     overflow: auto;
+    box-sizing: border-box;
 }
 .info,
 .address,
 .confirmation {
+    /* transform: scale(1.0001); */
   display: flex;
-  width: 100%;
+  /* width: 600px; */
   flex-direction: column;
   background-color: rgb(255, 220, 65);
   align-items: center;
@@ -23,6 +25,8 @@
   box-sizing: border-box;
   border-radius: 10px; /* Add border-radius for a better look */
   margin: 10px 0;
+  width: 100%;
+  max-width: 600px;
 }
 .confirmation {
     flex: 1;
@@ -44,6 +48,23 @@
 .formlab {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width:100%;
+    max-width: 400px;
     margin-bottom: 10px; /* Add some margin between labels and inputs */
+  }
+  /*media queries*/
+  @media (max-width: 760px){
+    .container{ 
+        padding: 10px;
+    }
+ .info,.confirmation, .address{
+    padding: 10px;
+
+ }
+ .formlab{
+    padding: 5px;
+    max-width: 100%;
+
+ }
+
   }
