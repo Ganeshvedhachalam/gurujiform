@@ -1,0 +1,49 @@
+.container{
+    flex-direction: column;
+    background :lightblue;
+    display: flex;
+    width:100vw;
+    height:100vh;
+    justify-content:space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    gap: 1px;
+    padding: 20px; /* Add padding to ensure the content is not touching the edges */
+    overflow: auto;
+}
+.info,
+.address,
+.confirmation {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: rgb(255, 220, 65);
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px; /* Add border-radius for a better look */
+  margin: 10px 0;
+}
+.confirmation {
+    flex: 1;
+    background-color: lightgreen;
+    align-items: flex-start;
+    border: 1px solid black; /* Add a border for clarity */
+    overflow: auto;
+    overflow-x:hidden;
+  }
+  .confirmation p {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; /* Make sure the paragraphs take the full width */
+    margin-left: 30px;
+    margin-right: 30px;
+    
+  }
+  
+.formlab {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-bottom: 10px; /* Add some margin between labels and inputs */
+  }
